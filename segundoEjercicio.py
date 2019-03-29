@@ -1,19 +1,17 @@
-a=int(input("Ingrese un número: "))
-b=int(input("Ingrese el número que desea que sea elevado: "))
-
 def cuadrado(a,b):
 	oper=a**b
 	print(oper)
 	return oper
 
-oper1=cuadrado(a,b)
-
-c=int(input("Ingrese otro número: "))
-d=int(input("Ingrese el número que desea que sea elevado: "))
-
-oper2=cuadrado(c,d)
+for i in range(0,2):
+	a=int(input("Ingrese un número: "))
+	b=int(input("Ingrese el número que desea que sea elevado: "))
+	if i==0:
+		oper1=cuadrado(a,b)
+	else:
+		oper2=cuadrado(a,b)
 
 if oper1>oper2:
-	print("La primera es mayor que la segunda")
+	print("El primer resultado es mayor que el segundo")
 else:
-	print("La segunda es mayor que la primera")
+	print("El segundo resultado es mayor que el primero")
