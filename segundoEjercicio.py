@@ -4,8 +4,8 @@ def cuadrado(a,b):
 	return oper
 
 for i in range(0,2):
-	a=int(input("Ingrese un número: "))
-	b=int(input("Ingrese el número que desea que sea elevado: "))
+	a=int(input("Ingrese la base: "))
+	b=int(input("Ingrese el exponente: "))
 	if i==0:
 		oper1=cuadrado(a,b)
 	else:
